@@ -1,0 +1,126 @@
+:root {
+  --verde: #5ca720;
+  --marrom:#6e4b32;
+  --preto: #161616;
+  --cinza: #a5a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--preto);
+}
+
+/* Estilização header */
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  height: 10vh;
+}
+
+.header-logo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.text-logo {
+    font-size: 22px;
+}
+
+.list-links {
+    width: 200px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.list-links img {
+    width: 25px;
+} 
+
+/* Estilização Main */
+.img-banner {
+    width: 100%;
+}
+
+
+/* Estilização Section promotion */
+.container__promotion {
+   border-bottom: 1px solid #a5a0a0;
+   display: flex;
+   justify-content: space-between;
+   width: 90vw;
+   margin: 0 auto;
+   padding: 1em;
+}
+
+.title-promotion {
+    text-transform: uppercase;
+}
+
+.text-promotion {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Estilização Card */
+.container__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.card__description {
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.card__description img {
+    width: 450px;
+}
+
+.card-title, .text-card-description, .card-link {
+    margin-left: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.card-span {
+    font-size: 18px;
+    color: var(--verde);
+    border-bottom: 1px solid var(--verde);
+}
+
+.card-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: var(--verde);
+    width: fit-content;
+    padding: .4em 1.2em;
+    border-radius: 16px;
+    letter-spacing: 1px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.card-link:hover {
+    background-color: var(--marrom);
+}
