@@ -57,11 +57,15 @@ body {
 /* Estilização Section promotion */
 .container__promotion {
    border-bottom: 1px solid #a5a0a0;
-   display: flex;
-   justify-content: space-between;
-   width: 90vw;
-   margin: 0 auto;
+   width: 100%;
    padding: 1em;
+}
+
+.box-promotion {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 91%;
 }
 
 .title-promotion {
@@ -78,21 +82,26 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 40px;
     width: 90vw;
     margin: 0 auto;
     padding: 1em;
 }
 
 .card__description {
-    width: 440px;
+    /* width: 400px; */
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin: 20px 0;
 }
 
+.ProdutoFigure {
+    width: 350px;
+}
+
 .card__description img {
-    width: 450px;
+    width: 100%;
 }
 
 .card-title, .text-card-description, .card-link {
@@ -123,4 +132,59 @@ body {
 
 .card-link:hover {
     background-color: var(--marrom);
+}
+
+/* Estilização footer */
+
+.container-01, .container-02 {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-01 {
+    border-bottom: 1px solid var(--cinza);
+}
+
+.text-rodape, .container-input {
+    margin: 8px 0;
+}
+
+.container-input {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 300px;
+    font-size: 18px;
+    padding: .5em;
+    outline: none; 
+    border: 1px solid var(--cinza);  
+}
+
+input::placeholder {
+    color: var(--cinza);
+}
+
+.link-input {
+    text-decoration: none;
+    color: white;
+    background-color: var(--verde);
+    padding: .5em;
+    font-size: 18px;
+    width: 120px;
+    text-align: center;
+}
+
+.box-vector {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.vector-footer {
+    width: 40px;
 }
